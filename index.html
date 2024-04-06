@@ -217,8 +217,43 @@
             justify-content: center;
             align-content: center;
         }
-        .dev2{
-            display: table-column;
+        .dev h2{
+         font-size: 30px;
+         
+        }
+        .dev img{
+            height:300px;
+            width: 400px;
+        }
+        .dev p{
+            font-size: 15px;
+        }
+
+        @media(max-width:1024px){
+            .dev h2{
+                font-size: 27px;
+            } 
+            .dev p{
+                 font-size: 12px;
+        }
+        .dev img{
+            height: 200px;
+            width: 250px;
+        }
+        }
+
+        @media(max-width:768px){
+            .dev h2{
+                font-size: 17px;
+            }
+            .dev p{
+                font-size: 7px;
+                text-wrap: wrap;
+            }
+            .dev img{
+                height: 200px;
+                width: 150;
+            }
         }
         @media (max-width:768px){
             .ss{
@@ -275,15 +310,15 @@
 
     <div class="container mt-5">
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-2">
                 <div class="dev">
                     <center><h2>Chocolate Syrup</h2></center>
-                    <img src="images/bgg1.png" height="300px" width="400px">
+                    <img src="images/bgg1.png">
                     <center><p><b>made with the best quality cacao in the world</b></p></center>
                 </div>
             </div>
-            <div class="col-sm-1"></div>
-            <div class="col-sm-3">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2">
                 <div class="dev">
                     <center><h2>Chocolate IceCream</h2></center>
                     <img src="images/bgg2.png" height="300px" width="300px">
@@ -291,8 +326,8 @@
                 </div>
             </div>
 
-            <div class="col-sm-1"></div>
-            <div class="col-sm-3">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-2">
                 <div class="dev">
                     <center><h2>Chocolate Coffee</h2></center>
                     <img src="images/bgg3.png" height="300px" width="300px">

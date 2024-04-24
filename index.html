@@ -51,10 +51,10 @@
             .header3{
                 /* position: absolute; */
                 padding-bottom: 30px;
+                flex-wrap: wrap;
                 display: inline-flex;
                 top: 0;
-                right: 15px;
-
+                padding-right:70px;
             }
             .parent{
                 background-color: aliceblue;
@@ -86,6 +86,25 @@
             }
             ul li a:active{
                 background-color:black;
+            }
+            @media(max-width:564px){
+                .header3{
+                    padding-right: 20px;
+                    padding-top: 10px;
+                    float: right;
+                }
+                ul li{
+                    font-size: 10px;
+                    padding: 2px;
+                }
+                ul{
+                    padding-right:20px;
+                    display: contents;
+                }
+                .header2{
+                    font-size: 15px;
+                    padding-left: 10px;
+                }
             }
            
             
@@ -228,6 +247,11 @@
         .dev p{
             font-size: 15px;
         }
+        .ali{
+            /* display: flex; 
+            justify-content: center; 
+            align-items: center; */
+        }
 
         @media(max-width:1024px){
             .dev h2{
@@ -255,6 +279,12 @@
                 width: 150;
             }
         }
+        @media (max-width:574px){
+            .ali{ display: flex; 
+            justify-content: center; 
+            align-items: center; }
+        }
+
         @media (max-width:768px){
             .ss{
                 flex-wrap: wrap;
@@ -274,6 +304,92 @@
 
             }
         }
+        .lt{
+            font-size: 75px; 
+            color: #3f220f; 
+            font-family:'Poppins';
+
+        }
+        .landimg{
+                height:600px;
+            }
+     
+        @media (max-width:1024px){
+            .lt{
+                font-size: 60px;
+        }
+            .landimg{
+                height:500px;
+                padding-left: 0px;
+            }
+        }
+        @media (max-width:768px){
+            .lt{
+                font-size: 40px;
+        }
+        .landimg{
+                height:400px;
+                width: 300px;
+                padding-left:0px;
+            }
+
+    }
+    @media (max-width:700px){
+            .lt{
+                font-size: 40px;
+                display: flex;
+                justify-content: center;
+                align-content:center;
+        }
+        .landimg{
+                height:400px;
+                width: 300px;
+                padding-left:0px;
+            }
+
+    }
+    @media (max-width:425px){
+            .lt{
+                font-size: 25px;
+                display: flex;
+                justify-content: center;
+                align-content:center;
+                padding-left:20px;
+                
+        }
+        .landimg{
+                height:300px;
+                width: 350px;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                padding-left: 100px;
+            
+                
+            }
+
+    }
+    @media (max-width:320px){
+            .lt{
+                font-size: 25px;
+                display: flex;
+                justify-content: center;
+                align-content:center;
+                padding-left: 20px;
+                
+        }
+        .landimg{
+                height:300px;
+                width: 300px;
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                padding-left: 50px;
+            
+                
+            }
+
+    }
     </style>
 </head>
 <body>
@@ -285,7 +401,6 @@
             <li><a href="#home"> home</a></li>
             <li><a href="#about"> about</a></li>
             <li><a href="#Peaky">milk chocos</a></li>
-            <li><a href="#Pirates">dark chocos</a></li>
             <li><a href="#john">products</a></li>
             <li><a href="#contact">contact</a></li>
         </ul></div>
@@ -295,22 +410,22 @@
     <div class="row mt-5" style="padding-top: 50px;">
         <div class="col-sm-1"></div>
         <div class="col-sm-4">
-            <img class="aniright" src="images/bg 1.png" height="600px">
+            <img class="aniright landimg" src="images/bg 1.png" height="600px">
         </div>
         <div class="col-sm" style="justify-content: center; align-content: center;">
-            <h1 class="mt-5 anileft" style="font-size: 75px; color: #3f220f; font-family:Poppins";>Have a chocolate</h1>
+            <h1 class=" anileft lt">Have a chocolate</h1>
             <!-- <h1 style="font-size: 41px; color: #3f220f; font-family:Montserrat" class="anileft">Have it, Again have it, Then you love it</h1> -->
-            <h1 class="anileft" style="font-size: 75px; color: #3f220f; font-family:Poppins";>Best in the world</h1>
-            <h1 class="anileft" style="font-size: 75px; color: #3f220f; font-family:Poppins";>Top qulity coca</h1>
-            <h1 class="anileft" style="font-size: 75px; color: #3f220f; font-family:Poppins";>With coffee aroma</h1>
+            <h1 class="anileft lt">Best in the world</h1>
+            <h1 class="anileft lt">Top qulity coca</h1>
+            <h1 class="anileft lt">With coffee aroma</h1>
             
         
         </div>
     </div>
 
     <div class="container mt-5">
-        <div class="row">
-            <div class="col-sm-2">
+        <div class="row" >
+            <div class="col-sm-2 ali">
                 <div class="dev">
                     <center><h2>Chocolate Syrup</h2></center>
                     <img src="images/bgg1.png">
@@ -318,7 +433,7 @@
                 </div>
             </div>
             <div class="col-sm-2"></div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 ali">
                 <div class="dev">
                     <center><h2>Chocolate IceCream</h2></center>
                     <img src="images/bgg2.png" height="300px" width="300px">
@@ -327,7 +442,7 @@
             </div>
 
             <div class="col-sm-2"></div>
-            <div class="col-sm-2">
+            <div class="col-sm-2 ali">
                 <div class="dev">
                     <center><h2>Chocolate Coffee</h2></center>
                     <img src="images/bgg3.png" height="300px" width="300px">

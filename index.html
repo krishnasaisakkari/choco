@@ -66,7 +66,7 @@
             ul{
 
                 display: inline-flex;
-                padding-top: 10px;
+                margin-top: 50px;
             }
             ul li{
                 list-style-type: none;
@@ -77,7 +77,7 @@
             }
             ul li a{
                 text-decoration: none;
-                color: red;
+                color:#3f220f;
                 border-radius: 50px;
                 padding: 5px;
             }
@@ -86,11 +86,12 @@
             }
             ul li a:active{
                 background-color:black;
+                color: white;
             }
             @media(max-width:564px){
                 .header3{
                     padding-right: 20px;
-                    padding-top: 10px;
+                    padding-top: 29px;
                     float: right;
                 }
                 ul li{
@@ -193,7 +194,7 @@
             .card{
                 background:linear-gradient(to top,#3f220f,transparent);
                 width: 20rem;
-                height: 530px;
+                height: 540px;
             }
             .card img{
                 height: 350px;
@@ -285,7 +286,31 @@
             align-items: center; }
         }
 
-        @media (max-width:768px){
+        @media (max-width:425px){
+            .card{
+                width: 7rem;
+                height: 250px;
+            }
+            .card img{
+                height: 150px;
+                width: 7rem;
+            }
+            .card-body h3{
+                font-size: 10px;
+            }
+            .card-body h5{
+                font-size: 7px;
+            }
+            .card-body button{
+                height: 20px;
+                width: 60px;
+            }
+            .card-body button p{
+                font-size: 6px;
+            }
+        }
+
+        @media (min-width:768px){
             .ss{
                 flex-wrap: wrap;
 
@@ -294,8 +319,12 @@
                 width: 15rem;
             }
             .card img{
-                height: 400px;
+                height: 370px;
                 width: 240px;
+            }
+            .card-body button{
+                height: 35px;
+
             }
         }
         @media (max-width:1400px){
@@ -305,18 +334,23 @@
             }
         }
         .lt{
-            font-size: 75px; 
+            
             color: #3f220f; 
             font-family:'Poppins';
+            font-size: clamp(50px,10vw,65px);
 
         }
         .landimg{
                 height:600px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
             }
      
         @media (max-width:1024px){
             .lt{
-                font-size: 60px;
+                font-size: 48px;
         }
             .landimg{
                 height:500px;
@@ -363,7 +397,8 @@
                 display: flex;
                 justify-content: center;
                 align-items:center;
-                padding-left: 65px;
+                padding-left: 81px;
+                transform: translateX(20px);
             
                 
             }
@@ -390,17 +425,24 @@
             }
 
     }
+    @media (min-width:320px){
+        .landimg{
+            transform: translateX(0px);
+        }
+    }
+    .ftr:hover{
+            text-decoration: underline red;
+        }
     </style>
 </head>
 <body>
     <div class="row">
         <div class="col-sm-12">
     <header>
-        <div class="header2">coca</div>
+        <div class="header2">choco</div>
         <div class="header3"><ul>
             <li><a href="#"> home</a></li>
             <li><a href="#about"> about</a></li>
-            <li><a href="#mc">milk chocos</a></li>
             <li><a href="#pro">products</a></li>
             <li><a href="#contact">contact</a></li>
         </ul></div>
@@ -423,7 +465,7 @@
         </div>
     </div>
 
-    <div class="container mt-5" id="pro">
+    <div class="container mt-5">
         <div class="row" >
             <div class="col-sm-2 ali">
                 <div class="dev">
@@ -436,7 +478,7 @@
             <div class="col-sm-2 ali">
                 <div class="dev">
                     <center><h2>Chocolate IceCream</h2></center>
-                    <img src="images/bgg2.png" height="300px" width="300px">
+                    <img src="images/bgg2.png" height="300px" width="200px">
                     <center><p><b>made with the best quality cacao in the world</b></p></center>
                 </div>
             </div>
@@ -452,7 +494,19 @@
 
         </div>
     </div>
-
+    <br>
+    <div class="row mt-5" id="about">
+        <div class="col-12" style="display: flex; justify-content: center; align-content: center;">
+            <h2 >About us</h2>
+        </div>
+    </div>
+    <div class="container mb-5">
+    <div class="row">
+        <div class="col-12" style="display: flex; justify-content: center; align-content: center;">
+            <h3 class="text-wrap" style="text-align: justify; color: #3f220f;">Choco is a premium chocolate brand that prides itself on delivering high-quality, artisanal chocolates to discerning chocolate lovers around the world. Founded on the principles of sustainability, ethical sourcing, and craftsmanship, Choco has quickly gained a reputation for its exquisite flavor profiles and luxurious packaging.</h3>
+        </div>
+    </div>
+</div>
 
 
 
@@ -465,12 +519,12 @@
     <div class="row mt-1">
         <div class="ss aniup">
         
-            <div class="card kk">
+            <div class="card kk" id="pro">
                 <img src="images/card c2.jpg">
                 <div class="card-body" style="color: white;">
                     <h3 style="text-align: left;">"A" quality coca</h3>
                     <h5 class="text-wrap">Our chocolates are made with 100% top quality contact</h5>
-                    <button class="btn btn-outline-warning">VISIT US</button>
+                    <button class="btn btn-outline-warning"><p>Shop Now</p></button>
                 </div>
             </div>
             
@@ -479,7 +533,7 @@
                     <div class="card-body" style="color: white;">
                         <h3 style="text-align: left;">"A" quality coca</h3>
                         <h5 class="text-wrap">Our chocolates are made with 100% top quality contact</h5>
-                        <button class="btn btn-outline-warning">VISIT US</button>
+                        <button class="btn btn-outline-warning"><p>Shop Now</p></button>
                     </div>
                 </div>
                 
@@ -488,7 +542,7 @@
                         <div class="card-body" style="color: white;">
                             <h3 style="text-align: left;">"A" quality coca</h3>
                             <h5 class="text-wrap">Our chocolates are made with 100% top quality contact</h5>
-                            <button class="btn btn-outline-warning">VISIT US</button>
+                            <button class="btn btn-outline-warning"><p>Shop Now</p></button>
                         </div>
                     </div>
             
@@ -496,6 +550,195 @@
         </div>
     
         </div>
+        <!-- forms begins -->
+        <div class="row mt-5">
+            <div class="col" style="display: flex; justify-content: center;align-items: center;">
+                <h1>Drop Your Feedback</h1>
+            </div>
+        </div>
+    <div class="row">
+        <div class="col-sm-12"><center><h1 style="color: white;">Book An Appointment</h1></center></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+    <form id="">
+        <div class="container">
+    <div class="form-row">
+        <div class="form-group col-md-12">
+    <label for="name" class="form-label font-weight-bold" style="color: white;">Your name:</label>
+        <input type="text" class="form-control" id="name" placeholder="your name" style="border: 1px solid;">
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-12">
+    <label for="email" class="form-label font-weight-bold" style="color: white;">Your mail id:</label>
+        <input type="text" class="form-control" id="email" placeholder="your mail id" style="border: 1px solid;" required>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-12">
+    <label for="select slot" class="form-label font-weight-bold" style="color: white;">date:</label>
+        <input type="date" class="form-control" id="select slot" placeholder="dd/mm/yyyy" style="border: 1px solid;">
+    </div>
+    <div class="form-row">
+ <div class="form-group col-md-12">
+        <label for="exampleFormControlTextarea1" style="color: white;">Example textarea:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="keep it here"></textarea>
+      </div>
+            <br/>
+            <a href="#"><button class="btn btn-outline-secondary">submit</button></a>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </form>
+    </div>
+    </div>
+    <!-- forms ends -->
+
+
+
+
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+<!-- <div class="container my-5"> -->
+<!-- Footer -->
+<footer
+    class="text-center text-lg-start text-white mt-5"
+    style="background-color: #3f220f">
+<!-- Grid container -->
+<div class="container p-4 pb-0" id="contact">
+<!-- Section: Links -->
+<section class="">
+  <!--Grid row-->
+  <div class="row">
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+      <h6 class="text-uppercase mb-4 font-weight-bold border-bottom">
+        Choco
+      </h6>
+      <p>
+        The only place where you can find the quality
+      </p>
+    </div>
+    <!-- Grid column -->
+
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+      <h6 class="text-uppercase mb-4 font-weight-bold border-bottom">Products</h6>
+      <p class="ftr">
+        <a href="#" class="text-white ftr" style="text-decoration: none;">tool kit</a>
+      </p>
+      <p class="ftr">
+        <a href="#" class="text-white frt" style="text-decoration: none;">paints gun</a>
+      </p>
+      <p class="ftr">
+        <a href="#" class="text-white ftr" style="text-decoration: none;">jocks</a>
+      </p>
+      <p class="ftr">
+        <a href="#" class="text-white ftr" style="text-decoration: none;">water guns</a>
+      </p>
+    </div>
+    <!-- Grid column -->
+
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+      <h6 class="text-uppercase mb-4 font-weight-bold border-bottom">
+        Membership
+      </h6>
+      <p class="ftr">
+        <a href="#" class="text-white" style="text-decoration: none;">Create an Account</a>
+      </p>
+      <p class="ftr">
+        <a href="#" class="text-white" style="text-decoration: none;">log in</a>
+      </p>
+      <p class="ftr">
+        <a href="#" class="text-white" style="text-decoration: none;">refer</a>
+      </p>
+      <p class="ftr">
+        <a href="#" class="text-white" style="text-decoration: none;">Help</a>
+      </p>
+    </div>
+
+    <!-- Grid column -->
+    <hr class="w-100 clearfix d-md-none" />
+
+    <!-- Grid column -->
+    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+      <h6 class="text-uppercase mb-4 font-weight-bold border-bottom">Contact</h6>
+      <p class="ftr"><i class="fas fa-home mr-3"></i>vizag,seethammadhara,tpt colony</p>
+      <p class="ftr"><i class="fas fa-envelope mr-3"></i> info@gmail.com</p>
+      <p class="ftr"><i class="fas fa-phone mr-3"></i> + 01 234 567 77</p>
+      <p class="ftr"><i class="fas fa-print mr-3"></i> + 01 234 567 77</p>
+    </div>
+    <!-- Grid column -->
+  </div>
+  <!--Grid row-->
+</section>
+<!-- Section: Links -->
+
+<hr class="my-3">
+
+<!-- Section: Copyright -->
+<section class="p-3 pt-0">
+  <div class="row d-flex align-items-center">
+    <!-- Grid column -->
+    <div class="col-md-7 col-lg-8 text-center text-md-start">
+      <!-- Copyright -->
+      <div class="p-3">
+        © 2024 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/"
+           >google.com</a
+          >
+      </div>
+      <!-- Copyright -->
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
+      <!-- Facebook -->
+      <a
+         class="btn btn-outline-light btn-floating m-1"
+         class="text-white"
+         role="button"
+         ><i class="fab fa-facebook-f"></i
+        ></a>
+
+      <!-- Twitter -->
+      <a
+         class="btn btn-outline-light btn-floating m-1"
+         class="text-white"
+         role="button"
+         ><i class="fab fa-twitter"></i
+        ></a>
+
+      <!-- Google -->
+      <a
+         class="btn btn-outline-light btn-floating m-1"
+         class="text-white"
+         role="button"
+         ><i class="fab fa-google"></i
+        ></a>
+
+      <!-- Instagram -->
+      <a
+         class="btn btn-outline-light btn-floating m-1"
+         class="text-white"
+         role="button"
+         ><i class="fab fa-instagram"></i
+        ></a>
+    </div>
+    <!-- Grid column -->
+  </div>
+</section>
+<!-- Section: Copyright -->
+</div>
+<!-- Grid container -->
+</footer>
 
 </body>
 </html>
